@@ -1,10 +1,10 @@
-"""Browser driver setup utility."""
+"""Utility for setting up the browser driver."""
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Use a longer explicit wait to handle slower page loads reliably
+# Increased from 10 to 30 seconds for slower machines
 EXPLICIT_WAIT = 30
 
 

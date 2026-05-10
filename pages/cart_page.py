@@ -8,7 +8,7 @@ from utils.driver_setup import EXPLICIT_WAIT
 
 
 class CartPage:
-    """Represents the cart page with methods to verify cart contents and proceed to checkout."""
+    """Handles cart management with drawer handling."""
 
     # Locators for elements on the cart page
     SUBTOTAL_HEADING = (

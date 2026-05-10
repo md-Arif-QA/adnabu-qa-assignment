@@ -7,7 +7,7 @@ from utils.driver_setup import EXPLICIT_WAIT
 
 
 class CheckoutPage:
-    """Represents the checkout page with methods to verify payment details and navigate back."""
+    """Handles checkout verification."""
 
     # Locators for elements on the checkout page
     PAYMENT_HEADING = (

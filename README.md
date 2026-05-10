@@ -170,10 +170,24 @@ pytest -v
 pytest -v -s
 ```
 
-### Run Specific Test
+### Run Tests with HTML Report
 
 ```bash
-pytest tests/test_complete_purchase_flow.py::TestCompletePurchaseFlow::test_search_add_cart_checkout_flow -v -s
+pytest --html=reports/test_report.html --self-contained-html
+```
+
+This generates a detailed HTML report in the `reports/` directory.
+
+### Run Tests with JUnit XML Report
+
+```bash
+pytest --junitxml=reports/test_results.xml
+```
+
+### Run Specific Test with Report
+
+```bash
+pytest tests/test_complete_purchase_flow.py::TestCompletePurchaseFlow::test_search_add_cart_checkout_flow --html=reports/test_report.html --self-contained-html -v -s
 ```
 
 ## 📊 Test Execution Details
@@ -199,6 +213,28 @@ Test execution provides detailed console output with:
 - Product listing information
 - Verification confirmations
 - Error details (if any)
+
+## 📊 Test Reports
+
+The project supports generating comprehensive test reports:
+
+### HTML Reports
+- Generated using `pytest-html` plugin
+- Self-contained HTML files with detailed test results
+- Includes screenshots, logs, and execution times
+- Located in `reports/test_report.html`
+
+### JUnit XML Reports
+- Standard XML format for CI/CD integration
+- Contains test results, durations, and failure details
+- Located in `reports/test_results.xml`
+
+### Viewing Reports
+1. Run tests with report generation: `pytest --html=reports/test_report.html --self-contained-html`
+2. Open the generated HTML file in any web browser
+3. Review test execution details, timings, and any failures
+
+**Note**: A sample test report (`reports/test_report.html`) is included in the repository for reference.
 
 ## 🛠️ Troubleshooting
 

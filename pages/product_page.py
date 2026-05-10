@@ -7,7 +7,7 @@ from utils.driver_setup import EXPLICIT_WAIT
 
 
 class ProductPage:
-    """Represents the product page with methods to interact with product details and add to cart."""
+    """Handles product details and cart addition."""
 
     # Locators for elements on the product page
     ADD_TO_CART_BUTTON = (

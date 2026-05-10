@@ -7,7 +7,7 @@ from utils.driver_setup import EXPLICIT_WAIT
 
 
 class SearchPage:
-    """Represents the search page with methods to perform searches and interact with results."""
+    """Handles search functionality and results."""
 
     # Locators for elements on the search page
     SEARCH_BOX = (

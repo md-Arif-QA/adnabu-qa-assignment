@@ -1,8 +1,8 @@
-"""Test suite for the complete purchase flow of the AdNabu e-commerce application."""
+"""Tests for the complete purchase flow."""
 
 
 class TestCompletePurchaseFlow:
-    """Test class for verifying the end-to-end purchase flow from search to checkout."""
+    """Tests the end-to-end purchase flow."""
 
     def test_search_add_cart_checkout_flow(self, page_objects):
         """Test the complete flow from searching a product to adding it to cart and checkout."""

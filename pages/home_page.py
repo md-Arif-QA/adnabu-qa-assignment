@@ -7,7 +7,7 @@ from utils.driver_setup import EXPLICIT_WAIT
 
 
 class HomePage:
-    """Represents the home page with methods to interact with its elements."""
+    """Handles interactions on the home page."""
 
     # Locators for elements on the home page
     PASSWORD_INPUT = (By.NAME, "password")

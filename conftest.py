@@ -1,4 +1,4 @@
-"""Pytest configuration and shared fixtures."""
+"""Pytest fixtures for the test suite."""
 
 import pytest
 from utils.driver_setup import get_driver

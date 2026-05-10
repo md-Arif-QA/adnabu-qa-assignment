@@ -4,5 +4,8 @@ selenium==4.15.2
 # Pytest - Testing framework
 pytest==7.4.3
 
+# Pytest HTML Reports - Generate HTML test reports
+pytest-html==4.1.1
+
 # WebDriver Manager - Automatic browser driver management
 webdriver-manager==4.0.1
