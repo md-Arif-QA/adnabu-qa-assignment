@@ -3,7 +3,7 @@ name: Run Pytest Automation
 on:
   push:
     branches:
-      - main
+      - ci-cd-integration
 
 jobs:
   test:
