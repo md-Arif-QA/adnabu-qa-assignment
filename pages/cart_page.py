@@ -4,6 +4,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import EXPLICIT_WAIT
 
 
 class CartPage:
@@ -43,7 +44,7 @@ class CartPage:
     def __init__(self, driver):
         """Initialize the CartPage with a WebDriver instance."""
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, EXPLICIT_WAIT)
 
     def verify_cart_drawer_opened(self):
         """Verify that the cart drawer is opened by checking the subtotal heading."""

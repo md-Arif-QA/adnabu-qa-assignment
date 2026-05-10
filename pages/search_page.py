@@ -3,6 +3,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import EXPLICIT_WAIT
 
 
 class SearchPage:
@@ -27,7 +28,7 @@ class SearchPage:
     def __init__(self, driver):
         """Initialize the SearchPage with a WebDriver instance."""
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, EXPLICIT_WAIT)
 
     def search_product(self, product_name):
         """Enter the product name into the search box."""

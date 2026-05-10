@@ -3,6 +3,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import EXPLICIT_WAIT
 
 
 class ProductPage:
@@ -27,7 +28,7 @@ class ProductPage:
     def __init__(self, driver):
         """Initialize the ProductPage with a WebDriver instance."""
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, EXPLICIT_WAIT)
 
     def verify_product_page(self):
         """Verify that the product page is loaded by checking the Add to Cart button."""

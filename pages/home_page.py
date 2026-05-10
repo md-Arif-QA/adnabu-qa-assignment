@@ -3,6 +3,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import EXPLICIT_WAIT
 
 
 class HomePage:
@@ -34,7 +35,7 @@ class HomePage:
     def __init__(self, driver):
         """Initialize the HomePage with a WebDriver instance."""
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, EXPLICIT_WAIT)
 
     def open_application(self, url):
         """Navigate to the application's home page."""

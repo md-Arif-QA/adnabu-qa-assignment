@@ -3,6 +3,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import EXPLICIT_WAIT
 
 
 class CheckoutPage:
@@ -22,7 +23,7 @@ class CheckoutPage:
     def __init__(self, driver):
         """Initialize the CheckoutPage with a WebDriver instance."""
         self.driver = driver
-        self.wait = WebDriverWait(driver, 15)
+        self.wait = WebDriverWait(driver, EXPLICIT_WAIT)
 
     def verify_payment_page(self):
         """Verify that the payment page is loaded and contains all necessary sections."""

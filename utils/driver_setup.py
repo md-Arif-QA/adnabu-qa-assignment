@@ -4,6 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+# Use a longer explicit wait to handle slower page loads reliably
+EXPLICIT_WAIT = 30
+
 
 def get_driver():
     """Create and return a configured Chrome WebDriver instance."""
