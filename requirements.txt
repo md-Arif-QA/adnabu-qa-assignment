@@ -9,3 +9,6 @@ pytest-html==4.1.1
 
 # WebDriver Manager - Automatic browser driver management
 webdriver-manager==4.0.1
+
+# Allure Pytest - Generate Allure Reports
+ allure-pytest==2.13.2
